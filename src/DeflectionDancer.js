@@ -1,6 +1,6 @@
 var DeflectionDancer = function(top, left, timeBetweenSteps){
 
-  Dancer.call(this, top, left, timeBetweenSteps / 75);
+  Dancer.call(this, top, left, timeBetweenSteps / 50);
 // call the old version of step at the beginning of any call to this new version of step
   this.oldStep();
   this.$node.css({'border': '10px solid ' + '#'+Math.floor(Math.random()*16777215).toString(16)});

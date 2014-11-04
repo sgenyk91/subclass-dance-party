@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   $(".lineUp").on("click", function(event){
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].$node.css({left:20});
+      window.dancers[i].left = 20;
     }
   });
 });

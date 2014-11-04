@@ -13,4 +13,5 @@ BlinkyDancer.prototype.oldStep = Dancer.prototype.step;
     // other effects you can use on a jQuery-wrapped html tag.
 BlinkyDancer.prototype.step = function() {
   this.$node.toggle();
+  this.$node.css({left:this.left});
 };
