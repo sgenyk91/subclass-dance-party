@@ -1,7 +1,7 @@
 $(document).ready(function(){
   window.dancers = [];
-  WINDOWHEIGHT = $(document).height() - 40;
-  WINDOWWIDTH = $(document).width() - 40;
+  WINDOWHEIGHT = $(document).height();
+  WINDOWWIDTH = $(document).width();
 
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
@@ -29,7 +29,14 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
+  });
+
+  $(".lineUp").on("click", function(event){
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].$node.css({left:20});
+    }
   });
 });
 
