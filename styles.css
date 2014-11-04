@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body, html{
   overflow: hidden;
   height:100%;
@@ -21,7 +24,7 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border: 10px solid red;
   border-radius:10px;
   position:absolute;
 }
