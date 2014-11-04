@@ -38,5 +38,15 @@ $(document).ready(function(){
       window.dancers[i].left = 20;
     }
   });
+  $(".freeze").on("click", function() {
+    for (var i = 0; i < window.dancers.length; i++) {
+      freezeTime(window.dancers[i]);
+    }
+  });
 });
+
+var freezeTime = function(dancer) {
+  clearInterval(dancer.interval);
+  setTimeout(dancer.step, 3000);
+};
 

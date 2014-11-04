@@ -40,7 +40,7 @@ DeflectionDancer.prototype.step = function() {
 DeflectionDancer.prototype.checkForYCollision = function() {
   for (var i = 0; i < window.dancers.length; i++) {
     var dancer = window.dancers[i];
-    if ((dancer !== this) && (Math.abs(this.top - dancer.top) < 10)) {
+    if ((dancer !== this) && (Math.abs(this.top - dancer.top) < 5)) {
       return true;
     }
   }
@@ -50,7 +50,7 @@ DeflectionDancer.prototype.checkForYCollision = function() {
 DeflectionDancer.prototype.checkForXCollision = function() {
   for (var i = 0; i < window.dancers.length; i++) {
     var dancer = window.dancers[i];
-    if ((dancer !== this) && (Math.abs(this.left - dancer.left) < 10)) {
+    if ((dancer !== this) && (Math.abs(this.left - dancer.left) < 5)) {
       return true;
     }
   }
