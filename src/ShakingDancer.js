@@ -1,0 +1,3 @@
+var ShakingDancer = function() {
+
+};
