@@ -43,10 +43,13 @@ $(document).ready(function(){
       freezeTime(window.dancers[i]);
     }
   });
+  $('body').on('mouseover', '.dancer', function() {
+    $(this).remove();
+  });
 });
 
 var freezeTime = function(dancer) {
   clearInterval(dancer.interval);
-  setTimeout(dancer.step, 3000);
+  setTimeout(Dancer.prototype.step.bind(dancer), 3000);
 };
 

@@ -28,3 +28,6 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.freeze{
+  margin-left: 20px;
+}

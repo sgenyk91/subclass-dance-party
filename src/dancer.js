@@ -16,7 +16,6 @@ Dancer.prototype.step = function(){
   this.interval = setInterval(function() {
     that.step();
   }, that.timeBetweenSteps);
-
 };
 
 
